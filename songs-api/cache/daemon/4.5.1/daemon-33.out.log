@@ -1,0 +1,166 @@
+00:13:34.262 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:+HeapDumpOnOutOfMemoryError, -Xmx1024m, -Dfile.encoding=UTF-8, -Duser.country, -Duser.language=en, -Duser.variant]
+00:13:34.476 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=6bf9cac4-aa5e-45df-9591-a3e5dd3c1461,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/app/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+00:13:34.528 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface eth0
+00:13:34.535 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+00:13:34.538 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? true
+00:13:34.541 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.20.0.6
+00:13:34.543 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote multicast interface eth0
+00:13:34.546 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+00:13:34.548 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+00:13:34.551 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a multicast interface? false
+00:13:34.553 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+00:13:34.560 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]].
+00:13:34.572 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Wed Mar 21 00:13:34 GMT 2018, with address: [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]]
+00:13:34.575 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]]
+00:13:34.587 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=6bf9cac4-aa5e-45df-9591-a3e5dd3c1461,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/app/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+00:13:34.590 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]], context: DefaultDaemonContext[uid=6bf9cac4-aa5e-45df-9591-a3e5dd3c1461,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/app/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+00:13:34.637 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+00:13:34.649 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+00:13:34.674 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+00:13:34.679 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+00:13:34.687 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+00:13:34.705 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+00:13:34.712 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+00:13:34.715 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+00:13:34.736 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:52746 to /127.0.0.1:38657.
+00:13:34.997 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.Build
+00:13:35.009 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received non-IO message from client: Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app}
+00:13:35.017 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app}.
+00:13:35.049 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app} with connection: socket connection from /127.0.0.1:38657 to /127.0.0.1:52746.
+00:13:35.072 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:38657 to /127.0.0.1:52746] after 0.0 minutes of idle
+00:13:35.087 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]]
+00:13:35.090 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]]
+00:13:35.097 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+00:13:35.105 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+00:13:35.117 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+00:13:35.121 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+00:13:35.124 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+00:13:35.125 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app}. Dispatching build started information...
+00:13:35.137 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+00:13:35.156 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin, JAVA_JCE=unlimited, SPRING_PROFILES_ACTIVE=dev, JAVA_HOME=/opt/jdk, OLDPWD=/app, GLIBC_VERSION=2.27-r0, LANG=C.UTF-8, JAVA_VERSION_MAJOR=8, GRADLE_USER_HOME=cache, HOSTNAME=5cf93a62a9b7, GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc, JAVA_VERSION_MINOR=162, PWD=/app, JAVA_PACKAGE=jdk, JAVA_VERSION_BUILD=12, HOME=/root, SHLVL=1}
+00:13:35.184 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+00:13:35.190 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 33). The daemon log file: /app/cache/daemon/4.5.1/daemon-33.out.log
+00:13:35.209 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 954.7 MB]
+00:13:35.217 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.CloseInput
+00:13:35.223 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@3a327ddb
+00:13:35.226 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+00:13:35.240 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+00:13:35.239 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+00:13:35.245 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=6bf9cac4-aa5e-45df-9591-a3e5dd3c1461,javaHome=/opt/jdk1.8.0_162,daemonRegistryDir=/app/cache/daemon,pid=33,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+:compileJava
+:processResources UP-TO-DATE
+:classes
+:bootRun
+2018-03-21 00:14:19.375  INFO 78 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@130161f7: startup date [Wed Mar 21 00:14:19 GMT 2018]; root of context hierarchy
+2018-03-21 00:14:21.728  INFO 78 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-21 00:14:22.188  INFO 78 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a68ae6f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v1.5.8.RELEASE)[0;39m
+
+[2m2018-03-21 00:14:23.783[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.example.songsapi.SongsApiApplication  [0;39m [2m:[0;39m The following profiles are active: dev
+[2m2018-03-21 00:14:23.886[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mationConfigEmbeddedWebApplicationContext[0;39m [2m:[0;39m Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f3f02ee: startup date [Wed Mar 21 00:14:23 GMT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@130161f7
+[2m2018-03-21 00:14:29.305[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=17fa6ba7-05d3-39bb-9a8d-549d6c2a0265
+[2m2018-03-21 00:14:29.636[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mf.a.AutowiredAnnotationBeanPostProcessor[0;39m [2m:[0;39m JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[2m2018-03-21 00:14:30.368[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a70e3f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2018-03-21 00:14:30.647[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mtrationDelegate$BeanPostProcessorChecker[0;39m [2m:[0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a68ae6f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2m2018-03-21 00:14:32.056[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36ms.b.c.e.t.TomcatEmbeddedServletContainer[0;39m [2m:[0;39m Tomcat initialized with port(s): 8082 (http)
+[2m2018-03-21 00:14:32.112[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2018-03-21 00:14:32.116[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet Engine: Apache Tomcat/8.5.23
+[2m2018-03-21 00:14:33.705[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2018-03-21 00:14:33.706[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.web.context.ContextLoader           [0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 9820 ms
+[2m2018-03-21 00:14:35.174[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.ServletRegistrationBean [0;39m [2m:[0;39m Mapping servlet: 'dispatcherServlet' to [/]
+[2m2018-03-21 00:14:35.222[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'characterEncodingFilter' to: [/*]
+[2m2018-03-21 00:14:35.223[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2m2018-03-21 00:14:35.224[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2m2018-03-21 00:14:35.224[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[ost-startStop-1][0;39m [36mo.s.b.w.servlet.FilterRegistrationBean  [0;39m [2m:[0;39m Mapping filter: 'requestContextFilter' to: [/*]
+[2m2018-03-21 00:14:36.963[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.f.core.internal.util.VersionPrinter   [0;39m [2m:[0;39m Flyway 3.2.1 by Boxfuse
+[2m2018-03-21 00:14:37.736[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.f.c.i.dbsupport.DbSupportFactory      [0;39m [2m:[0;39m Database: jdbc:postgresql://postgresdev:5432/pgdev (PostgreSQL 10.3)
+[2m2018-03-21 00:14:38.048[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.f.core.internal.command.DbValidate    [0;39m [2m:[0;39m Validated 3 migrations (execution time 00:00.097s)
+[2m2018-03-21 00:14:38.053[0;39m [33m WARN[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mationConfigEmbeddedWebApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed. Migration Checksum mismatch for migration 2
+-> Applied to database : -222359912
+-> Resolved locally    : 147791013
+[2m2018-03-21 00:14:38.062[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2m2018-03-21 00:14:38.139[0;39m [32m INFO[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mutoConfigurationReportLoggingInitializer[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[2m2018-03-21 00:14:38.215[0;39m [31mERROR[0;39m [35m78[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Validate failed. Migration Checksum mismatch for migration 2
+-> Applied to database : -222359912
+-> Resolved locally    : 147791013
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at com.example.songsapi.SongsApiApplication.main(SongsApiApplication.java:20) [main/:na]
+Caused by: org.flywaydb.core.api.FlywayException: Validate failed. Migration Checksum mismatch for migration 2
+-> Applied to database : -222359912
+-> Resolved locally    : 147791013
+	at org.flywaydb.core.Flyway.doValidate(Flyway.java:1108) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.access$300(Flyway.java:62) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1012) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.execute(Flyway.java:1418) ~[flyway-core-3.2.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:1006) ~[flyway-core-3.2.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-1.5.8.RELEASE.jar:1.5.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.12.RELEASE.jar:4.3.12.RELEASE]
+	... 18 common frames omitted
+
+:bootRun FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command '/opt/jdk1.8.0_162/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 14s
+3 actionable tasks: 2 executed, 1 up-to-date
+00:14:38.482 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+00:14:38.507 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+00:14:38.511 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:38657 to /127.0.0.1:52746]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@72af1321 with state Busy
+00:14:38.514 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:38657 to /127.0.0.1:52746]
+00:14:38.517 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+00:14:38.521 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]]
+00:14:38.524 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [161ab9ca-e1ee-4dcf-a41a-62a6ec392575 port:38657, addresses:[/127.0.0.1]]
+00:14:38.541 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+00:14:38.550 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+00:14:38.567 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+00:14:38.572 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+00:14:38.573 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Failure[value=org.gradle.initialization.ReportedException: org.gradle.internal.exceptions.LocationAwareException: Execution failed for task ':bootRun'.]
+00:14:38.577 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: dispatching class org.gradle.launcher.daemon.protocol.Failure
+00:14:38.673 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=c1bd1b58-973e-4bea-abe7-1113a90afe47.1, currentDir=/app}
+00:14:38.782 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received class org.gradle.launcher.daemon.protocol.Finished
+00:14:38.794 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@1bf03a83
+00:14:38.803 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@1bf03a83
+00:14:38.803 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+00:14:38.815 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: received null
+00:14:38.817 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 15: Received end-of-input from client.
+00:14:38.811 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
+00:14:38.828 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: stopping connection
